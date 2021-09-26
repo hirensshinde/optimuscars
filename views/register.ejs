@@ -1,0 +1,114 @@
+<!-- Login Area Start -->
+<section class="gauto-login-area section_70">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="login-box signup-login-box">
+               
+               <div class="login-page-heading">
+                  <i class="fa fa-key"></i>
+                  <h3>sign Up</h3>
+               </div>
+               <%- include('./partials/messages') %>
+                  <form method="POST" action="/register">
+                     
+                     <div class="form-row">
+                        <div class="form-group icon-form-group col-md-6">
+                           <i class="fa fa-user"></i>
+                           <input
+                           type="text"
+                           placeholder="First Name"
+                           name="firstname"
+                           class="form-control"
+                           value="<%= typeof firstname != 'undefined' ? firstname : '' %>"
+                           >
+                        </div>
+                        
+                        <div class="form-group icon-form-group col-md-6">
+                           <i class="fa fa-user"></i>
+                           <input 
+                           type="text"
+                           placeholder="Last Name"
+                           name="lastname"
+                           class="form-control"
+                           value="<%= typeof lastname != 'undefined' ? lastname : '' %>"
+                           >
+                        </div>
+                     </div>
+                     
+                     
+                     <div class="form-group icon-form-group">
+                        <i class="fa fa-envelope-o"></i>
+                        <input 
+                        type="email"
+                        placeholder="Email"
+                        name="email"
+                        class="form-control"
+                        value="<%= typeof email != 'undefined' ? email : '' %>"
+                        >
+                     </div>
+                     
+                     <div class="form-row">
+                        <div class="form-group icon-form-group col-md-6">
+                           <i class="fa fa-mobile" style="font-size:22px;"></i>
+                           <input 
+                           type="text"
+                           class="form-control"
+                           placeholder="Mobile No."
+                           name="mobile"
+                           value="<%= typeof mobile != 'undefined' ? mobile : '' %>"
+                           >
+                        </div>
+                        <div class="form-group icon-form-group col-md-6">
+                           <i class="fa fa-calendar-plus-o"></i>
+                           <input 
+                           type="text"
+                           class="form-control jDatepicker"
+                           name="dateofbirth"
+                           placeholder="Date of Birth"
+                           value="<%= typeof dateofbirth != 'undefined' ? dateofbirth : '' %>"
+                           >
+                        </div>
+                     </div>
+                     
+                     <div class="form-row">
+                        <div class="form-group icon-form-group col-md-6">
+                           <i class="fa fa-lock"></i>
+                           <input 
+                           type="password" 
+                           id="password" 
+                           placeholder="Password" 
+                           name="password" 
+                           class="form-control"
+                           value="<%= typeof password != 'undefined' ? password : '' %>"
+                           >
+                           <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group icon-form-group col-md-6">
+                           <i class="fa fa-lock"></i>
+                           <input 
+                           type="password" 
+                           id="cpassword" 
+                           placeholder="Confirm Password" 
+                           name="cpassword" 
+                           class="form-control"
+                           value="<%= typeof cpassword != 'undefined' ? cpassword : '' %>"
+                           >
+                           <span toggle="#cpassword" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        </div>
+                        
+                        
+                     </div>
+                     <p>
+                        <button type="submit" class="gauto-theme-btn">Register now</button>
+                     </p>
+                  </form>
+                  <div class="login-sign-up">
+                     <a href="/login">Already have an account?</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Login Area End -->

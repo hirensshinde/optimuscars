@@ -1,0 +1,47 @@
+ <!-- Header Top Area Start -->
+ <section class="gauto-header-top-area">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="header-top-left">
+                <p>Need Help?: <i class="fa fa-phone"></i> Call: +1 312-286-6404</p>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="header-top-right">
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- Header Top Area End -->
+  
+  
+
+ <!-- Main Header Area Start -->
+ <header class="gauto-main-header-area" id="stickyHeader">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-3">
+             <div class="site-logo">
+                <a href="index.html">
+                <img src="assets/img/logo(new).png" alt="gauto" />
+                </a>
+             </div>
+          </div>
+          <div class="col-lg-3 col-sm-9">
+          </div>
+          <div class="col-lg-6">
+             <div class="header-action">
+               <% if( typeof user != 'undefined' ) { %>
+                  <a href="#" style="display: none"></a>
+                  <a href="#"> Hello, <%= user.firstname %> </a>
+               <% } else { %>
+                  <a class="register" href="/register"> Register </a>
+                  <a class="login" href="/login"> Login </a>
+               <% } %>
+             </div>
+          </div>
+       </div>
+    </div>
+ </header>       
